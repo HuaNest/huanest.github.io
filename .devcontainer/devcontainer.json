@@ -1,0 +1,25 @@
+{
+  "name": "HuaNest Heritage Dev",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "remoteUser": "node",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "HuaNest API",
+      "onAutoForward": "notify"
+    }
+  },
+  "containerEnv": {
+    "NODE_ENV": "development"
+  },
+  "postCreateCommand": "npm install --prefix apps/api",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}

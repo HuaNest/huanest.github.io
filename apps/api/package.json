@@ -1,0 +1,14 @@
+{
+  "name": "huanest-heritage-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal API service scaffold for HuaNest Heritage",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.32.1",
+    "express": "^4.19.2"
+  }
+}
